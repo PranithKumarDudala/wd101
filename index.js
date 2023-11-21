@@ -1,6 +1,15 @@
 let table = document.getElementById("tableElement");
 
+let details = localStorage.getItem("details");
 
+if(details === null)
+{
+    let details = [];
+
+    let detailsString = JSON.stringify(details);
+
+    localStorage.setItem("details",detailsString);
+}
 
 // let details = [];
 
